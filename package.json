@@ -4,7 +4,6 @@
   "description": "Example of how to deploy a Express.js Netlify app.",
   "main": "functions/server.js",
   "scripts": {
-    "prebuild": "node ./scripts/installer.js",
     "build": "netlify-lambda build express",
     "start": "nodemon server-local.js"
   },
@@ -27,6 +26,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "knex": "^0.21.14",
+    "mssql": "^6.3.0",
     "mysql": "^2.18.1",
     "mysql2": "^2.2.5",
     "netlify-lambda": "^1.6.3",
