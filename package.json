@@ -4,6 +4,7 @@
   "description": "Example of how to deploy a Express.js Netlify app.",
   "main": "functions/server.js",
   "scripts": {
+    "prebuild": "node ./scripts/installer.js",
     "build": "netlify-lambda build express",
     "start": "nodemon server-local.js"
   },
